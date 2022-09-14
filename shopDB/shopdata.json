@@ -1,0 +1,25 @@
+{"products":[
+
+
+  {"Id":1, "name":"asus", "price":"2300","categoryId":1, "description":"leptop",
+"imageUrl":"https://img.wallpapic.com/i8624-629-223/thumb/laptop-alienware-netbook-technology-wallpaper.jpg"},
+  {"Id":2, "name":"Apple", "price":"2400","categoryId":2, "description":"leptop",
+"imageUrl":"https://img.wallpapic.com/i5714-925-219/thumb/hardware-white-design-computer-wallpaper.jpg"},
+  {"Id":3, "name":"lenova", "price":"2500","categoryId":3, "description":"leptop",
+"imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcmLuvTWcxGGMEP3vKMRfS1xTBDmBSSJL4p47YFqSyhz5JW_bA7JMNojfRLutx3XTauEg&usqp=CAU"},
+  {"Id":5, "name":"moster", "price":"2700","categoryId":5, "description":"leptop",
+"imageUrl":"https://www.bilgisayartamirci.net/resimler/urunler/275x234/2_packard-bell-notebook-ekran-degisimi-resim-905.jpg"},
+  {"Id":6, "name":"casper", "price":"2700","categoryId":6, "description":"leptop",
+"imageUrl":"https://www.kozen.com.tr/cdn/2/350/350/images/urunler/5f9952272bdd5-4542.jpg"}
+ ],
+
+"categories":[
+     {"Id":1, "name":"BİLGİSAYARLAR"},
+     {"Id":2, "name":"TELEFONLAR"},
+     {"Id":3, "name":"ELEKTİRİLİ EV ALETLERİ"},
+     {"Id":4, "name":"ÇANTALAR"},
+     {"Id":5, "name":"AKSESUARLAR"}
+
+]
+
+}

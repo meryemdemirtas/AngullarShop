@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sipariş</title>
+</head>
+
+<body>
+    <div class="card-body">
+
+        <div class="mb-3">
+            <label for="id" class="form-label">Sipariş Tarihi</label>
+            <input  class="form-control" [(ngModel)]="newOrder.date" type="date">
+
+        </div>
+
+        <div class="mb-3">
+            <label for="firma" class="form-label">Firma Seçimi</label>
+            <select class="form-select" [(ngModel)]="newOrder.firmname" type="text" >
+                <option [ngValue]="1">
+                    Firma1
+                </option>
+                <option [ngValue]="2">
+                    Firma2
+                </option>
+                <option [ngValue]="3">
+                    Firma3
+                </option>
+                <option [ngValue]="4">
+                    Firma4
+                </option>
+                <option [ngValue]="5">
+                    Firma5
+                </option>
+            </select>
+        </div>
+
+        {{degisken}}
+
+            <div class="row">
+                <div class="col">
+                  
+                 
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Ürün Adı</label>
+                        <input   [(ngModel)]="newOrder.productname" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Adet</label>
+                        <input [(ngModel)]="newOrder.amount" type="number" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Tutar</label>
+                        <input  [(ngModel)]="newOrder.price"  type="text" class="form-control">
+                    </div>
+
+                </div>
+            </div>
+     
+        <div>
+            <button type="button" class="btn btn-primary" (click)="save()">Kaydet</button>
+        </div>
+
+
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+          <table class="table mb-0">
+            <thead>
+              <tr>
+                <th>Sipariş Tarihi</th>
+                <th>Firma</th>
+                <th>Ürün Adı</th>
+                <th>Adet</th>
+                <th>Tutar</th>
+            
+              </tr>
+            
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of orders">
+                <td>{{item.productName}}</td>
+                <td>{{item.firmName}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.amount}}</td>
+                <td>{{item.price}}</td>
+                <td><button type="button" class="btn btn-primary btn-sm" >Düzenle</button></td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+
+      </div>
+
+</body>
+
+</html>
